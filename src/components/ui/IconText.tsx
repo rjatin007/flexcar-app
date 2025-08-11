@@ -17,7 +17,7 @@ const IconText = ({
   return (
     <div
       className={clsx(
-        "flex justify-start items-center rounded-md w-full px-2 py-1 ",
+        "flex justify-start items-center rounded-md w-full px-2 py-1",
         containerClasses
       )}
     >
