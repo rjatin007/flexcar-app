@@ -11,7 +11,7 @@ type TagProps = {
 const Tag = ({ onClick, tag }: TagProps) => (
   <div
     className={clsx(
-      "flex justify-start items-center rounded-2xl border-1 border-solid border-gray-200 px-2 py-1 mx-1",
+      "flex justify-start items-center rounded-3xl border-1 border-solid border-gray-200 p-2 px-3 mx-1",
       tag?.isActive && "bg-slate-100"
     )}
     onClick={onClick}
@@ -22,6 +22,7 @@ const Tag = ({ onClick, tag }: TagProps) => (
     )}
   </div>
 );
+
 const Tags = () => {
   const [activeTags, setActiveTags] = useState([...TAGS]);
 

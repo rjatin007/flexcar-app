@@ -4,13 +4,9 @@ import Tags from "../ui/Tags";
 
 const FilterBar = () => {
   return (
-    <div className="flex items-start justify-between w-full ">
+    <div className="flex items-center justify-between w-full ">
       <div className="flex justify-start items-start w-max ">
-        <IconText
-          icon={FilterIcon}
-          text="Filter"
-          textClasses="text-[#3A00E5]"
-        />
+        <IconText icon={FilterIcon} text="Filter" textClasses="text-primary" />
       </div>
 
       <Tags />
