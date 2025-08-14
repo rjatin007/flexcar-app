@@ -5,9 +5,12 @@ import ModalContent from "./ModalContent";
 
 const Modal = ({ children }: { children: ReactNode }) => {
   return (
-    <ModalBackdrop>
-      <ModalContent>{children}</ModalContent>
-    </ModalBackdrop>
+    <>
+      {" "}
+      <ModalBackdrop>
+        <ModalContent>{children}</ModalContent>
+      </ModalBackdrop>
+    </>
   );
 };
 
