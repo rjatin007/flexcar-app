@@ -12,12 +12,15 @@ const HeaderMenu = () => {
       <div className="hidden md:flex justify-around items-center space-x-4">
         <Link
           to="https://www.flexcar.com/how-it-works"
-          className="cursor-pointer text-sm"
+          className="cursor-pointer text-md"
         >
           {" "}
           How it works
         </Link>
-        <Link to="" className="cursor-pointer text-sm">
+        <Link
+          to="https://www.flexcar.com/login"
+          className="cursor-pointer text-md"
+        >
           {" "}
           Login
         </Link>
