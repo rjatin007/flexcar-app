@@ -1,6 +1,6 @@
 import CheckBoxInput from "./CheckBoxInput";
 
-const CheckBoxSelector = () => {
+const CheckBoxSelector = ({ filter }) => {
   return (
     <div className="w-full">
       <CheckBoxInput />

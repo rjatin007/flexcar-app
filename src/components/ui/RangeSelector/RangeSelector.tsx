@@ -1,20 +1,27 @@
 import { useState } from "react";
 import DualRangeSlider from "./DualRangeSlider";
+import type { filterType } from "../../../constants/appTypes";
+import { getMin } from "../../../utils/helpers";
 
-const RangeSelector = () => {
+type RangeSelectorProps = {
+  filter: filterType;
+};
+
+const RangeSelector = ({ filter }: RangeSelectorProps) => {
   const [values, setValues] = useState([0, 100]);
+  // const defaultMin = getMin();
   return (
-    <div className="w-full py-2 px-2 flex flex-col justify-between items-center overflow-x-hidden">
-      <div className="flex justify-start items-center gap-2 w-full my-2">
+    <div className="w-full py-2 px-2 md:px-1 flex flex-col justify-between items-center overflow-x-hidden ">
+      <div className="flex justify-start items-center w-full my-2">
         <input
           type="text"
-          className="px-4 py-3 rounded-2xl border-1 border-solid border-slate-200 w-38 text-center outline-none hover:border-primary focus:border-primary"
+          className="px-4 md:px-2 py-3 rounded-2xl border-1 border-solid border-slate-200  w-38 md:w-28 text-center outline-none hover:border-primary focus:border-primary"
           value={20}
         />
-        <span className="mx-4">-</span>
+        <span className="mx-4 md:mx-2">-</span>
         <input
           type="text"
-          className="px-4 py-3 rounded-2xl border-1 border-solid border-slate-200 w-38 text-center outline-none hover:border-primary focus:border-primary"
+          className="px-4 md:px-2 py-3 rounded-2xl border-1 border-solid border-slate-200 w-38 md:w-28 text-center outline-none hover:border-primary focus:border-primary"
           value={20}
         />
       </div>
