@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import Dashboard from "./components/Dashboard/Dashboard";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 const App = () => {
   return (
